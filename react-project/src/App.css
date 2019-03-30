@@ -1,0 +1,34 @@
+#AppNav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.125rem;
+  background: #fff;
+  z-index: 1000;
+  text-align: center;
+  border-top:1px solid #ccc;
+  box-sizing: border-box; 
+}
+#AppNav .nav-item{
+  display: flex;
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  font-size: .625rem;
+  flex-direction: column;
+  align-items: center;
+}
+#AppNav .nav-item a{
+  display: flex;
+  text-align: center;
+  height: 100%;
+  font-size: .625rem;
+  flex-direction: column;
+  justify-content: center;
+  color: #999;
+}
+#AppNav .nav-item a i{
+  font-size: 1rem;
+}
