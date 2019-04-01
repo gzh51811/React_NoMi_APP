@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-let Rice = ()=>{
-    return <div className="Rice">
-        饭圈
-    </div>
+class Rice extends Component{
+    render(){
+        return <div className="Rice">
+            饭圈
+        </div>
+    }
 }
 
 export default Rice;
