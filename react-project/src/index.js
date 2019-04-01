@@ -20,9 +20,9 @@ let store = createStore((state = {
 
 render(
     <Provider store={store}>
-    <HashRouter>
-        <App/>
-    </HashRouter>
+        <HashRouter>
+            <App/>
+        </HashRouter>
     </Provider>
     , document.getElementById('root')
 );
