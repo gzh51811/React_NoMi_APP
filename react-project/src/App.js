@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 import Home from './pages/Home';
 import List from './pages/List';
 import Show from './pages/Show';
@@ -64,8 +63,8 @@ class App extends Component {
 			<div className="container">
 				<nav id="AppNav">
 				{
-					 this.state.navs.map(item => (<div className="nav-item">
-					 <NavLink activeStyle={{ color: '#333', fontWeight: 'bold' }} key={item.name} to={item.path}>
+					 this.state.navs.map(item => (<div className="nav-item"  key={item.name}>
+					 <NavLink activeStyle={{ color: '#333', fontWeight: 'bold' }} to={item.path}>
 						<Icon type={item.icon}/>
 						<span>{item.text}</span>
 						</NavLink>
