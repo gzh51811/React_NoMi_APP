@@ -63,13 +63,8 @@ class App extends Component {
 			<div className="container">
 				<nav id="AppNav">
 				{
-<<<<<<< HEAD
-					 this.state.navs.map(item => (<div className="nav-item"  key={item.name}>
-					 <NavLink activeStyle={{ color: '#333', fontWeight: 'bold' }} to={item.path}>
-=======
 					 this.state.navs.map(item => (<div className="nav-item" key={item.name}>
 					 <NavLink activeStyle={{ color: '#333', fontWeight: 'bold' }} key={item.name} to={item.path}>
->>>>>>> 027d1ed1c2bb19b5fdbb715c6973f1b7f675aa3c
 						<Icon type={item.icon}/>
 						<span>{item.text}</span>
 						</NavLink>
