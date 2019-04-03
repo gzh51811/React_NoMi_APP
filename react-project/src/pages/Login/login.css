@@ -1,0 +1,101 @@
+html,body{
+    background: #f5f5f5;
+}
+.login{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.login h2 {
+    width: 10rem;
+    height: 3rem;
+    margin:3rem auto;
+}
+.login h2 img{
+    width: 100%;
+}
+.login .login_input{
+    margin:auto;
+    text-align: center;
+    position: relative;
+    width: 22rem;
+}
+.login .login_input .login_phone{
+    width: 22rem;
+    height: 3rem;
+    border:.0625rem solid #ccc;
+    padding-left:1rem;
+    color:#888;
+    font-size: 1.25rem;
+}
+.login .login_input .login_psw{
+    width: 22rem;
+    height: 3rem;
+    border:.0625rem solid #ccc;
+    padding-left:1rem;
+    color:#888;
+    font-size: 1.25rem;
+    margin-top:1rem;
+}
+.login .anticon-close{
+    position: absolute;
+    top:50%;
+    right:5%;
+    font-size: 1rem;
+    margin-top:-0.5rem;
+}
+.login .anticon-eye{
+    position: absolute;
+    top:50%;
+    right:5%;
+    font-size: 1rem;
+}
+.login .login_btn{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    margin-top:2rem;
+}
+.login .login_btn button{
+    width: 22rem;
+    height: 100%;
+    border:0;
+    background: #3c76FF;
+    font-size: 1.25rem;
+    color:#90b6ff;
+}
+
+.login .login_p{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.875rem;
+    color:#888;
+    margin-top:2rem;
+    position: relative;
+}
+.login .login_p a{
+    color:#888;
+    margin:0 0.5rem;
+    font-size: 1rem;
+    position: absolute;
+}
+.login .login_a1{
+    left:10%;
+}
+.login .login_a2{
+    right:10%;
+}
+.login .to-reg{
+    position: fixed;
+    bottom:10%;
+    left:50%;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-left:-5rem;
+    font-size: 1.25rem;
+    border:.0625rem solid #90b6ff;
+    color:#3c76FF;
+}

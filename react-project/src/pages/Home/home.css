@@ -8579,6 +8579,10 @@
   .Home .swiper-wrapper{
     height: 12.5rem;
   }
+  .Home .topbar{
+    width: 100%;
+    height: 5.625rem;
+  }
   .Home .topbar img{
     width: 100%;
   }
