@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as Swiper from 'swiper/dist/js/swiper.js';
 import 'swiper/dist/css/swiper.min.css';
-import {Icon} from 'antd';
+    import {Icon} from 'antd';
 
 class show extends  Component {
     constructor(){
