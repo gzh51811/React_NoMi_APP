@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-
 import Home from './pages/Home';
 import List from './pages/List';
 import Show from './pages/Show';
 import Rice from './pages/Rice';
 import Mine from './pages/Mine';
+// import Login from './pages/Login';
+
 
 import './App.css'
 import {Icon} from 'antd';
@@ -48,7 +49,19 @@ class App extends Component {
 					icon: 'home'
 				}
 			],
-			current: 'Home'
+			current: 'Home',
+			route: [
+				{
+					text: '登录',
+					name: 'Login',
+					path: '/login',
+				},
+				{
+					text: '注册',
+					name: 'Reg',
+					path: '/reg',
+				}
+			]
 		};
 	}
 	handleClick = (e)=>{
