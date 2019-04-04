@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
+
 import Home from './pages/Home';
 import List from './pages/List';
 import Show from './pages/Show';
 import Rice from './pages/Rice';
 import Mine from './pages/Mine';
-// import Login from './pages/Login';
-
 
 import './App.css'
 import {Icon} from 'antd';
@@ -49,19 +48,7 @@ class App extends Component {
 					icon: 'home'
 				}
 			],
-			current: 'Home',
-			route: [
-				{
-					text: '登录',
-					name: 'Login',
-					path: '/login',
-				},
-				{
-					text: '注册',
-					name: 'Reg',
-					path: '/reg',
-				}
-			]
+			current: 'Home'
 		};
 	}
 	handleClick = (e)=>{
@@ -77,7 +64,7 @@ class App extends Component {
 			<div className="container">
 				<nav id="AppNav">
 				{
-					 this.state.navs.map(item => (<div className="nav-item" key={item.name}>
+					 this.state.navs.map(item => (<div className="nav-item">
 					 <NavLink activeStyle={{ color: '#333', fontWeight: 'bold' }} key={item.name} to={item.path}>
 						<Icon type={item.icon}/>
 						<span>{item.text}</span>

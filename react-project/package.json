@@ -122,7 +122,6 @@
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "react-redux": "^6.0.1",
-    "redux": "^4.0.1",
-    "swiper": "^4.5.0"
+    "redux": "^4.0.1"
   }
 }
