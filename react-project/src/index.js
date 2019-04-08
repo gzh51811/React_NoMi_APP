@@ -1,4 +1,4 @@
-import React ,{Component} from 'react';
+import React from 'react';
 import {render} from 'react-dom';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
@@ -8,7 +8,7 @@ import App from './App';
 import Reg from './pages/Reg';
 import Login from './pages/Login';
 
-import {HashRouter,Redirect,Route,Switch} from 'react-router-dom';
+import {HashRouter,Route,Switch} from 'react-router-dom';
 
 
 let store = createStore((state = {

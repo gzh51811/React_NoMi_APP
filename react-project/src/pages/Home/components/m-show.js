@@ -27,31 +27,31 @@ class show extends  Component {
                 <div className="swiper-container">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                         <div className="swiper-slide swiper-slide-active ">
-                            <div className="show-img"><img src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
+                            <div className="show-img"><img alt="" src="https://gsp0.baidu.com/6bNXsjip0QIZ8Aqbn9fN2DC/timg?size=f244_339&quality=60&name=yanchupiao&wh_rate=0&&di=102c5f86bf9d498010448c87655faaff&sec=0&imgtype=0&src=http://c.hiphotos.baidu.com/movie/pic/item/79f0f736afc3793128027a28e5c4b74543a9114c.jpg" /></div>
                             <p className="show-p">开心麻花2019爆笑贺岁舞台剧《窗前不止明月光》</p>
                         </div>
                     </div>
