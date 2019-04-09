@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Home from './pages/Home';
 import List from './pages/List';
+
 import Show from './pages/Show';
 import Rice from './pages/Rice';
 import Mine from './pages/Mine';
@@ -28,25 +29,25 @@ class App extends Component {
 					text: '电影',
 					name: 'List',
 					path: '/list',
-					icon: 'home'
+					icon: 'smile'
 				},
 				{
 					text: '演出',
 					name: 'Show',
 					path: '/show',
-					icon: 'home'
+					icon: 'border'
 				},
 				{
 					text: '饭圈',
 					name: 'Rice',
 					path: '/rice',
-					icon: 'home'
+					icon: 'heart'
 				},
 				{
 					text: '我的',
 					name: 'Mine',
 					path: '/mine',
-					icon: 'home'
+					icon: 'user'
 				}
 			],
 			current: 'Home',
@@ -60,6 +61,17 @@ class App extends Component {
 					text: '注册',
 					name: 'Reg',
 					path: '/reg',
+				},{
+					text: '电影',
+					name: 'Listitem',
+					path: '/listitem',
+					icon: 'home'
+				},
+				{
+					text: '电影',
+					name: 'Itemsite',
+					path: '/itemsite',
+					icon: 'home'
 				}
 			]
 		};

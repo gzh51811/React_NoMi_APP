@@ -1,0 +1,225 @@
+/* index */
+.hint{
+    margin-bottom: 3.125rem;
+    padding: 1rem;
+    text-align: center;
+    color:#999;
+}
+.goTop>div{
+    right:.3125rem;
+    bottom:3.3125rem;
+}
+
+/* Nav */
+.List .navTop{
+    padding-top: .875rem;
+}
+.List .navTop div{
+    line-height: 2rem;
+    /* border:.0625rem solid #fff; */
+}
+.List .navTop .nav_l{
+    text-align: left;
+    padding-left: .3125rem;
+}
+.List .navTop .nav_c{
+    text-align: center;
+    border:.0625rem solid #bf974d;
+    border-radius:4px;
+    color: #bf974d;
+}
+.List .navTop .nav_r{
+    text-align: right;
+    padding-right:.3125rem;
+}
+.List .navTop .nav_c span{
+    display: inline-block;
+    width: 50%;
+    line-height: 2rem;
+}
+.List .navTop .nav_c .active{
+    background-color: #bf974d;
+    color: #fff;
+}
+
+
+/* film */
+.film{
+
+}
+.film .option{
+    text-align: center;
+}
+.film .option span{
+    display:inline-block;
+    font-size:.875rem;
+    line-height: 2rem;
+    border-bottom: .125rem solid #fff
+}
+.film .option .active{
+    border-color:#333;
+}
+.film .carousel div{
+    background: #fff;
+}
+.film .carousel img{
+    width:100%;
+}
+
+
+/* Item */
+.item{
+    display:flex;
+    padding:.625rem 0;
+    margin: 0 .8125rem;
+    border-bottom:.0625rem solid #ccc;
+}
+.item_l img{
+    width: 4.5rem;
+    margin-right: .625rem;
+}
+.item_r{
+    flex:1;
+}
+.item_r h4{
+    color: #333;
+    font-size: 1rem;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight:blod;
+    margin: 0;
+}
+.item_r>p{
+    line-height: .875rem;
+    height: .875rem;
+    color: #ff9c38;
+    font-size: .75rem;
+    vertical-align: middle;
+    margin-bottom: .75rem;
+}
+.item_r>div{
+    display:flex;
+}
+.item_r>div p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: .5625rem;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.item_r>div .introduce{
+    width:60%;
+}
+.item_r>div .buy_ticket{
+    width: 4.0625rem;
+    margin: auto;
+}
+.item_r>div buttom{
+    vertical-align: middle;
+    
+}
+
+/* Cinema */
+.cinema .option{
+    text-align: center;
+    border-bottom:.0625rem solid #ccc;
+}
+.cinema .option span{
+    display:inline-block;
+    font-size:.875rem;
+    line-height: 2rem;
+}
+
+/* CinemaItem */
+.cinemaItem{
+    padding:.8125rem .8125rem 0 .8125rem;
+}
+.cinemaItem>div{
+    padding-bottom:.8125rem;
+    border-bottom: .0625rem solid #eaeaea;
+}
+.cinemaItem h3{
+    line-height: 1.125rem;
+    font-size: 1rem;
+    margin: 0;
+}
+.cinemaItem p{
+    margin: 0;
+    color: #999;
+    font-size: .75rem;
+    max-width: 80%;
+    margin-top: .5625rem;
+    /* padding-bottom: .125rem; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cinemaItem .feature{
+    margin: .1875rem 0;
+}
+.cinemaItem .feature span{
+    border:.0625rem solid #fbab00;
+    color: #fbab00;
+    font-size:.875rem;
+    line-height:.875rem;
+    display: inline-block;
+    margin-right: .3125rem;
+    padding:.0625rem;
+    text-align: center;
+    border-radius:.125rem;
+}
+.cinemaItem .discounts{
+    position: relative;
+}
+.cinemaItem .discounts>span{
+    background-color:#ff562f;
+    color: #fff;
+    border-radius:50%;
+    display: inline-block;
+    font-size: .75rem;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    width: 1.125rem;
+    text-align:center;
+    vertical-align: middle;
+    margin-right:.1875rem;
+}
+.cinemaItem .discounts>div{
+    display: inline-block;
+}
+.cinemaItem .discounts .discounts_option span{
+    display: inline-block;
+    font-size: .75rem;
+    vertical-align: middle;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cinemaItem .discounts .starting_price{
+    position: absolute;
+    right: 0;
+}
+.cinemaItem .discounts .starting_price span{
+    line-height: 1.125rem;
+    vertical-align: middle;
+    color: #999;
+}
+.cinemaItem .discounts .starting_price span em{
+    color: #b08c4a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+*::-webkit-scrollbar {/*隐藏滚轮*/
+    display: none;
+    }
