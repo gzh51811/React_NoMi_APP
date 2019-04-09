@@ -93,9 +93,9 @@ class Fq extends Component{
                                                         <div className="main_cont_img">
                                                         <img src={item.imgurl} alt=""/>
                                                         </div>
-                                                        <h3 class="title">{item.name}</h3>
-                                                        <p class="fan-info">{item.poll}糯米饭</p>
-                                                        <p class="fan-info">{item.tie}个新增贴</p>
+                                                        <h3 className="title">{item.name}</h3>
+                                                        <p className="fan-info">{item.poll}糯米饭</p>
+                                                        <p className="fan-info">{item.tie}个新增贴</p>
                                                 </div>
                                                 <div className="Fq_main_btn">关注
                                                 </div>
