@@ -4,7 +4,27 @@ import './Mine.css';
 import { Icon } from 'antd';
 
 class Mine extends Component{
+    constructor(){
+        super();
+        this.state = {
+            isLogin:false,
+            name:"123"
+        }
+    }
+    componentWillMount(){
+        let storage = localStorage.getItem('user');
+        if(storage){
+            let str = JSON.parse(storage);
+            this.setState({
+                name:str.username
+            })
+        }
+    }
+    gotoLogin(){
+        this.props.history.push('/login');
+    }
     render(){
+        let storage = localStorage.getItem('user')
         return <div className="Mine">
                 <div className="Mine_head">
                     <div className="Mine_head_top">
@@ -13,8 +33,10 @@ class Mine extends Component{
                     <div className="Mine_head_bottom">
                         <div className="head_bottom_left"></div>
                         <div className="head_bottom_right">
-                            <span>立即登录</span>
-                            <Icon type="right" />
+                        {
+                            storage ? <div><span>{this.state.name}</span></div> : <div><span onClick={this.gotoLogin.bind(this)}>立即登录</span>
+                            <Icon type="right" /></div>
+                        }
                         </div>
                     </div>
                 </div>
