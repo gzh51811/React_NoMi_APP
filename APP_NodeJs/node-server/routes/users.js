@@ -30,9 +30,14 @@ router.post('/',jsonParser,urlencodedParser,async (req, res) => {
         if(str.length > 0){
             res.send('该用户已注册');
         }else{
-            let str2 = await db.insert('user',{username,password});
+            let str2 = await db.insert('user',{username,password,key:username,name:username});
             res.send(str2);
         }
+    }else if(code == 3){
+        // 后台管理系统查询用户列表
+        let str = await db.find('user',{});
+        // console.log(str);
+        res.send(str);
     }
 });
 

@@ -2,7 +2,8 @@ import React from 'react';
 import {render} from 'react-dom';
 import './index.css';
 import App from './App';
-import {HashRouter} from 'react-router-dom';
+import Login from './pages/Login'
+import {HashRouter,Route,Switch} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
 // 引入store
@@ -14,7 +15,10 @@ import {Provider} from 'react-redux';
 render(
     <Provider store={store}>
         <HashRouter>
-            <App />
+            <Switch>
+                <Route path='/Login' component={Login}/>
+                <Route path='/' component={App}/>
+            </Switch>
         </HashRouter>
     </Provider>
     ,

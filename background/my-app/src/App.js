@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Route, Redirect, Switch ,HashRouter,withRouter} from 'react-router-dom';
+import { Route, Redirect, Switch ,withRouter} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import withAxios from './hoc/withAxios';
 
 import Home from './pages/Home/home';
 import Movie from './pages/Movie/movie';
@@ -9,7 +10,7 @@ import Theatre from './pages/Theatre/theatre';
 import User from './pages/User/user';
 
 // 引入antd框架
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon ,message} from 'antd';
 const { Header, Content, Footer, Sider, } = Layout;
 
 
@@ -18,6 +19,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
+            name:"",
             navs: [
                 {
                     text:'首页',
@@ -47,6 +49,31 @@ class App extends Component {
             current:'Home'
         }
     }
+    async componentDidMount(){
+        //用token验证登录
+        let storage = localStorage.getItem('user');
+        if(storage){
+            let str = JSON.parse(storage);
+            console.log(str.name);
+            let res = await this.props.axios.post('/tokenverify',{
+                params:{
+                    token:str.token,
+                }
+            })
+            this.setState({
+                name:str.username
+            })
+            if(res.data.code == 0){
+                message.success('欢迎您'+ this.state.name);
+            }else if(res.data.code == 1){
+                message.error('您还为登录哦~请先登录');
+                this.props.history.push('/login');
+            }
+        }else{
+            message.error('您还为登录哦~请先登录');
+            this.props.history.push('/login');
+        }
+    }
     handleClick=(e)=>{
         console.log(e);
         this.setState({
@@ -56,6 +83,10 @@ class App extends Component {
             // 
             this.props.history.push('/'+e.key.toLowerCase());
         })
+    }
+    onExit(){
+        localStorage.removeItem('user');
+        this.props.history.push('/login');
     }
     render() {
         return (
@@ -68,6 +99,8 @@ class App extends Component {
                 >
                 <div className="logo" />
                 <Menu theme="dark" mode="inline" onClick={this.handleClick}>
+                <p className="app_p">欢迎您，{this.state.name} </p>
+                <a href="javascript:;" className="app_exit" onClick={this.onExit.bind(this)}>退出登录</a>
                     {
                         this.state.navs.map(item=><Menu.Item key={item.name}>
                             <Icon type={item.icon} />
@@ -85,6 +118,7 @@ class App extends Component {
                             <Route path='/movie' component={Movie}/>
                             <Route path='/theatre' component={Theatre}/>
                             <Route path='/user' component={User}/>
+                            <Redirect from='/' to='/home'/>
                         </Switch>
                     </div>
                 </Content>
@@ -99,5 +133,5 @@ class App extends Component {
 }
 
 App = withRouter(App);
-
+App = withAxios(App);
 export default App;
