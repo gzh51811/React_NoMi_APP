@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import Home from './pages/Home';
 import List from './pages/List';
+import Listitem from './pages/List/List2.jsx';
+import Itemsite from './pages/List/List1.jsx';
 import Show from './pages/Show';
 import Rice from './pages/Rice';
 import Mine from './pages/Mine';
@@ -30,6 +32,7 @@ class App extends Component {
 					path: '/list',
 					icon: 'home'
 				},
+				
 				{
 					text: '演出',
 					name: 'Show',
@@ -60,6 +63,17 @@ class App extends Component {
 					text: '注册',
 					name: 'Reg',
 					path: '/reg',
+				},{
+					text: '电影',
+					name: 'Listitem',
+					path: '/listitem',
+					icon: 'home'
+				},
+				{
+					text: '电影',
+					name: 'Itemsite',
+					path: '/itemsite',
+					icon: 'home'
 				}
 			]
 		};
@@ -89,6 +103,8 @@ class App extends Component {
 				<Switch>
 					<Route path="/home" component={Home} />
 					<Route path="/list" component={List} />
+					<Route path="/listitem" component={Listitem} />
+					<Route path="/itemsite" component={Itemsite} />
 					<Route path="/show" component={Show} />
 					<Route path="/rice" component={Rice} />
 					<Route path="/mine" component={Mine} />

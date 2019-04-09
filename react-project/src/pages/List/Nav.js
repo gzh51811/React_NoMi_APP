@@ -31,7 +31,7 @@ class Nav extends Component{
         // console.log(this)
         let {bodyShow} = this.props.method;
 
-        return <div className="nav">
+        return <div className="navTop">
                 <Row>
                     <Col span={8} className="nav_l">广州市<Icon type="down" style={{marginLeft:'2px'}}/></Col>
                     <Col span={8} className="nav_c">

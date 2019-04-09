@@ -32,7 +32,7 @@ class Show extends Component{
                 <div><img width="100%" alt="" src={require('../../assets/ych.jpg')}/></div>
                 <NavPiao/>
                 <div className="verticalCarousel">
-                    <Carousel vertical  dots={false}>
+                    <Carousel vertical autoplay  dots={false}>
                         <div><p>「一起做个梦」音乐现场</p></div>
                         <div><p>Beatrich 2019 China Tour 广州站</p></div>
                         <div><p>志国夜总会 广州专场</p></div>

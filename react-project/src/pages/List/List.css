@@ -11,33 +11,33 @@
 }
 
 /* Nav */
-.List .nav{
+.List .navTop{
     padding-top: .875rem;
 }
-.List .nav div{
+.List .navTop div{
     line-height: 2rem;
-    border:.0625rem solid #fff;
+    /* border:.0625rem solid #fff; */
 }
-.List .nav .nav_l{
+.List .navTop .nav_l{
     text-align: left;
     padding-left: .3125rem;
 }
-.List .nav .nav_c{
+.List .navTop .nav_c{
     text-align: center;
     border:.0625rem solid #bf974d;
     border-radius:4px;
     color: #bf974d;
 }
-.List .nav .nav_r{
+.List .navTop .nav_r{
     text-align: right;
     padding-right:.3125rem;
 }
-.List .nav .nav_c span{
+.List .navTop .nav_c span{
     display: inline-block;
     width: 50%;
     line-height: 2rem;
 }
-.List .nav .nav_c .active{
+.List .navTop .nav_c .active{
     background-color: #bf974d;
     color: #fff;
 }
@@ -212,3 +212,14 @@
 .cinemaItem .discounts .starting_price span em{
     color: #b08c4a;
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+*::-webkit-scrollbar {/*隐藏滚轮*/
+    display: none;
+    }

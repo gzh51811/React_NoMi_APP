@@ -38,9 +38,9 @@ class Film extends Component{
     };
 
     async nextPage(qty,limit){
-        console.log(qty,limit)
+        // console.log(qty,limit)
         let dataList = await this.getData(qty,limit);
-        console.log(dataList.data)
+        // console.log(dataList.data)
         this.setState({
             page:this.state.page+1,
             dataList:[...this.state.dataList,...dataList.data]
@@ -53,7 +53,7 @@ class Film extends Component{
                     onTouchEnd={(e)=>{
                         if(document.documentElement.scrollTop>document.documentElement.clientHeight*this.state.page){
                             this.nextPage(this.state.page*7,7);
-                            console.log(this.state.page);
+                            // console.log(this.state.page);
                         }
                     }}
                 >
