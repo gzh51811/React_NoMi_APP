@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import './List.css';
 class List1 extends Component {
+
+    ogItem(){
+        console.log(this.props)
+        this.props.history.push({
+            pathname: '/itemsite'
+        })
+    }
+
     render() {
         console.log(this);
 
@@ -33,7 +41,7 @@ class List1 extends Component {
                     </div>
                     <div style={{ height: '40px' }}>
                         <div style={{ width: '30%', height: '70%', float: 'left', margin: '2% 10%', border: '1px #ffffff solid', textAlign: 'center', borderRadius: '10px', color: '#ffffff' }}>想看</div>
-                        <div style={{ width: '30%', height: '70%', float: 'left', margin: '2% 10%', border: '1px #ffffff solid', textAlign: 'center', borderRadius: '10px', color: '#ffffff' }}>饭圈</div>
+                        <div style={{ width: '30%', height: '70%', float: 'left', margin: '2% 10%', border: '1px #ffffff solid', textAlign: 'center', borderRadius: '10px', color: '#ffffff' }} onClick={this.ogItem.bind(this)}>购票</div>
                     </div>
                     <div>
                         <p style={{ padding: '2%', fontSize: '12px' }}>廉政公署收到报案人廖雨萍（周秀娜 饰）的实名举报，举报正在坐牢的富二代曹元元（林峯 饰）涉嫌行贿监狱里的监督沈济全（谭耀文 饰）以及惩教员，首席调查主任陆志廉（古天乐 饰）决定深入虎穴，卧底狱中。在监狱里，被陆志廉送入监狱的前警司黄文彬（林家栋 饰）以及曹元元两大帮派势成水火，陆志廉趁机接近曹元元取得信任。同时监狱外的廉政公署总调查主任程德明（郑嘉颖 饰）、国内反贪局行动处处长洪亮（丁海峰 饰）也陆港联手，通力合作，最终成功破获贪腐行贿大案。</p>
