@@ -1,0 +1,197 @@
+.info_content{
+    padding-left: .8125rem;
+    margin-bottom: .625rem;
+    background-color: #fff;
+}
+
+
+
+
+.info_content .tips{
+    color: #999;
+    font-size: .75rem;
+    padding: .75rem .8125rem .75rem 0;
+    overflow: hidden;
+    border-top: .0625rem solid #eaeaea;
+}
+.tips .alter{
+    color: #bf974d;
+    float: left;
+    margin-right: 1.5625rem;
+    
+}
+.tips .refund{
+    color: #bf974d;
+    float: left;
+    margin-right: 1.5625rem;
+}
+
+
+.info_content .seat-info{
+    font-size: .8125rem;
+    padding: 1rem 0;
+    color: #888;
+}
+
+.seat-info h4{
+    font-size: .9375rem;
+    margin-bottom: .75rem;
+    color: #333;
+}
+.seat-info .cinema-name{
+    font-size: .75rem;
+    color: #666;
+    margin-bottom: .5625rem;
+}
+.seat-info .show-time{
+    font-size: .75rem;
+    color: #bf974d;
+    margin-bottom: .5625rem;
+}
+.seat-info .show-time span{
+    margin-right: .4375rem;
+}
+.seat-info  .seat{
+    font-size: .75rem;
+    color: #666;
+}
+
+.info_content .inner-item{
+    padding: .625rem 0;
+    line-height: 1.25rem;
+    color: #888;
+    position: relative;
+    border-top: .0625rem solid #eaeaea;
+}
+.inner-item .act-name{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 12.5rem;
+    color: #333;
+    font-size: .8125rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    margin-right: .3125rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inner-item .act-des{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .75rem;
+    color: #999;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .625rem;
+}
+.inner-item em{
+    color: #22222d;
+    font-size: .8125rem;
+    font-style:normal
+}
+.inner-item .subtotal-final{
+    color: #b08c4a;
+    float: right;
+    padding-right: .8125rem;
+    font-size: 1rem;
+    line-height: 1em;
+}
+.inner-item .subtotal-detail{
+    text-align: right;
+    padding-right: .8125rem;
+    color: #999;
+    font-size: .6875rem;
+    line-height: 1em;
+    height: 1em;
+    margin-top: .5rem;
+}
+
+.info-item{
+    margin-bottom: .625rem;
+    background-color: #fff;
+    padding: 0 0 0 .8125rem;
+}
+.info-item .phone{
+    position: relative;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0;
+    color: #22222d;
+}
+.no-sms{
+    font-size: .75rem;
+    color: #999;
+    line-height: 1rem;
+    padding: .625rem 0;
+    border-top: .0625rem solid #eaeaea;
+}
+
+
+.fixed-wrapper{
+    position: fixed!important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    padding-bottom: env(safe-area-inset-bottom);
+    line-height: 3rem;
+    background-color: #fff;
+    font-size: .875rem;
+}
+.fixed-wrapper  em{
+    font-style: normal;
+}
+
+.fixed-wrapper .count {
+    float: left;
+    padding-left: .8125rem;
+    color: #88888d;
+    height: 3rem;
+    line-height: 3rem;
+}
+.fixed-wrapper .count em {
+    font-size: .9375rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fixed-wrapper .count .rmb {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .5rem;
+    font-size: 1.1875rem;
+    color: #b08c4a;
+}
+
+.fixed-wrapper .count .pay-price {
+    display: inline-block;
+    vertical-align: middle;
+    color: #b08c4a;
+    font-size: 1.25rem;
+    margin-left: .125rem;
+}
+.fixed-wrapper .price-detail-btn {
+    position: absolute;
+    right: 7rem;
+    display: inline-block;
+    font-size: .75rem;
+    color: #88888d;
+    text-align: right;
+    width: 5rem;
+}
+
+
+.fixed-wrapper #pay-btn{
+    position: relative;
+    float: right;
+    width: 6.25rem;
+    height: 3.0625rem;
+    line-height: 3.0625rem;
+    text-align: center;
+    font-size: 1rem;
+    background: #bf974d;
+    color: #fff;
+}

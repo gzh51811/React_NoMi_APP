@@ -6,7 +6,7 @@ import { Icon } from 'antd';
 
 const TabPane = Tabs.TabPane;
 function callback(key) {
-    console.log(key);
+    // console.log(key);
 }
 class List1 extends Component {
     constructor(props) {
@@ -152,7 +152,7 @@ class List1 extends Component {
         this.setState({
             Lshow: !this.state.Lshow
         });
-        console.log(this.state.Lshow)
+        // console.log(this.state.Lshow)
     }
     changenum(key) {
         this.setState({
@@ -164,15 +164,22 @@ class List1 extends Component {
         document.getElementsByClassName('imglist')[key].style.border = "yellow 2px solid"
     }
     changehold(key) {
-        console.log(key)
+        // console.log(key)
         var temps = this.state.seats;
         temps[key].select = !temps[key].select;
         this.setState({
             items: temps
         });
-
-
     }
+    goDingdan() {
+        let { history } = this.props;
+        history.push({
+            pathname: '/dingdan',
+            state: {
+                
+            }
+        })
+    };
     render() {
         return (
             <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
@@ -206,7 +213,7 @@ class List1 extends Component {
 
                         <div style={{ width: '120%', height: '50px', padding: '5%' }}>
                             <div style={{ width: '70%', height: '50px', float: 'left', textAlign: 'left', lineHeight: '50px' }}><span >提交后查看优惠价格</span></div>
-                            <div style={{ width: '30%', height: '50px', float: 'left', textAlign: 'center', background: '#bf974d', color: '#ffffff', lineHeight: '50px' }}>提交订单</div>
+                            <div onClick={this.goDingdan.bind(this)} style={{ width: '30%', height: '50px', float: 'left', textAlign: 'center', background: '#bf974d', color: '#ffffff', lineHeight: '50px' }}>提交订单</div>
                         </div>
                     </div>
 
@@ -298,7 +305,7 @@ class List1 extends Component {
 
 export default connect(
     (state) => {
-        console.log(state)
+        // console.log(state)
         return state
     },
     (dispatch) => {

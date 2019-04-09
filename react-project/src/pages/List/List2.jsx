@@ -16,7 +16,7 @@ class List1 extends Component {
     }
 
     async componentWillMount(){
-        console.log(this.props)
+        // console.log(this.props)
 
         let {query} = url.parse(this.props.location.search,true);
         let data = await this.props.axios.get('/list/details',{

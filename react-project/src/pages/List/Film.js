@@ -48,7 +48,7 @@ class Film extends Component{
     }
     
     render(){
-        console.log(this.state);
+        // console.log(this.state);
         return <div className="film"
                     onTouchEnd={(e)=>{
                         if(document.documentElement.scrollTop>document.documentElement.clientHeight*this.state.page){

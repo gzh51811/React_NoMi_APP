@@ -51,7 +51,7 @@ let Scene=()=>{
         }
     ]
 
-    console.log(data)
+    // console.log(data)
 
     return <div className="scene">
                 <h3>热门排行榜</h3>

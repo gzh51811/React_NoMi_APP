@@ -9,6 +9,7 @@ import Reg from './pages/Reg';
 import Login from './pages/Login';
 import Listitem from './pages/List/List2.jsx';
 import Itemsite from './pages/List/List1.jsx';
+import OrderForm from './pages/OrderForm';
 
 import {HashRouter,Route,Switch} from 'react-router-dom';
 
@@ -31,6 +32,7 @@ render(
                 <Route path="/login" component={Login}/>
                 <Route path="/listitem" component={Listitem} />
 				<Route path="/itemsite" component={Itemsite} />
+				<Route path="/dingdan" component={OrderForm} />
                 <Route path="/" component={App} />
             </Switch >
         </HashRouter>

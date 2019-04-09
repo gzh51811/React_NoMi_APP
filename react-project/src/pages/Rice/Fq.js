@@ -61,7 +61,7 @@ class Fq extends Component{
                 
         }
         handleChildClick = (e)=>{
-                console.log(e);
+                // console.log(e);
                 this.setState({
                     curr: e.key
                 },()=>{

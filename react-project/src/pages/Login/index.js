@@ -33,7 +33,7 @@ class Login extends Component{
                     password:psw,
                 }
             }).then((res)=>{
-                console.log(res.data);
+                // console.log(res.data);
                 if(res.data.code === 1){
                     message.error('您输入的账号或密码错误，登录失败');
                 }else if(res.data.code === 0){
