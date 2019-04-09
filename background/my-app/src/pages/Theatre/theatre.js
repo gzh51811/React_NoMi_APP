@@ -1,20 +1,62 @@
 import React, { Component } from 'react';
 
 import {
-    Table, Input, InputNumber, Popconfirm, Form,
+    Table, Input, InputNumber, Popconfirm, Form,Modal, Button
 } from 'antd';
 
-const data = [];
-for (let i = 0; i < 100; i++) {
-    data.push({
-        key: i.toString(),
-        name: `Edrward ${i}`,
-        age: 32,
-        address: `London Park no. ${i}`,
-    });
-}
 const FormItem = Form.Item;
 const EditableContext = React.createContext();
+
+class App extends React.Component {
+    state = {
+        loading: false,
+        visible: false,
+    }
+
+    showModal = () => {
+        this.setState({
+            visible: true,
+        });
+    }
+
+    handleOk = () => {
+        this.setState({ loading: true });
+        setTimeout(() => {
+            this.setState({ loading: false, visible: false });
+        }, 3000);
+    }
+
+    handleCancel = () => {
+        this.setState({ visible: false });
+    }
+
+    render() {
+        const { visible, loading } = this.state;
+        return (
+            <div>
+                <Button type="primary" onClick={this.showModal}>
+                    添加
+                </Button>
+                <Modal
+                    visible={visible}
+                    title="请输入信息..."
+                    onOk={this.handleOk}
+                    onCancel={this.handleCancel}
+                    footer={[
+                        <Button key="back" onClick={this.handleCancel}>返回</Button>,
+                        <Button key="submit" type="primary" loading={loading} onClick={this.handleOk}>
+                            确定
+                        </Button>,
+                    ]}
+                >
+                    <Input style={{marginBottom:'0.5rem'}} placeholder="影院名" />
+                    <Input style={{marginBottom:'0.5rem'}} placeholder="价格" />
+                    <Input placeholder="地址" />
+                </Modal>
+            </div>
+        );
+    }
+}
 
 class EditableCell extends React.Component {
     getInput = () => {
@@ -62,7 +104,7 @@ class EditableCell extends React.Component {
 class EditableTable extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { data, editingKey: '' };
+        this.state = { data:'', editingKey: '' };
         this.columns = [
             {
                 title: '影院',
@@ -83,14 +125,14 @@ class EditableTable extends React.Component {
                 editable: true,
             },
             {
-                title: 'operation',
+                title: '操作',
                 dataIndex: 'operation',
                 render: (text, record) => {
                     const { editingKey } = this.state;
                     const editable = this.isEditing(record);
                     return (
                         <div>
-                            {/* {editable ? (
+                            {editable ? (
                                 <span>
                                     <EditableContext.Consumer>
                                         {form => (
@@ -110,7 +152,8 @@ class EditableTable extends React.Component {
                                 </span>
                             ) : (
                                     <a disabled={editingKey !== ''} onClick={() => this.edit(record.key)}>编辑</a>
-                                )} */}
+                                )}
+                            {/* <App/> */}
                         </div>
                     );
                 },
@@ -137,6 +180,7 @@ class EditableTable extends React.Component {
                     ...item,
                     ...row,
                 });
+                console.log(newData[index])
                 this.setState({ data: newData, editingKey: '' });
             } else {
                 newData.push(row);
@@ -194,6 +238,7 @@ const EditableFormTable = Form.create()(EditableTable);
 class Theatre extends Component {
     render() {
         return <div className="theatre">
+            <App/>
             <EditableFormTable />
         </div>
     }

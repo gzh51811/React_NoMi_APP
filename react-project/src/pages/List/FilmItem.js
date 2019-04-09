@@ -15,8 +15,8 @@ class FilmItem extends Component{
         // console.log(this)
         let { history } = this.props;
         history.push({
-            pathname: '/listitem/' + id,
-            // search: '?id=' + id,
+            pathname: '/listitem/',
+            search: '?id=' + id,
             state: {
                 id
             }
