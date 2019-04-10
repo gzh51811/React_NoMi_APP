@@ -17,7 +17,7 @@ class List1 extends Component {
 
     async componentWillMount(){
         // console.log(this.props)
-
+        this.mounted = true;
         let {query} = url.parse(this.props.location.search,true);
         let data = await this.props.axios.get('/list/details',{
             params:{
@@ -26,10 +26,16 @@ class List1 extends Component {
                 limit:1
             }
         });
-        this.setState({
-            data:[...this.state.data,...data.data]
-        })
-    };
+        if(this.mounted){
+            this.setState({
+                data:[...this.state.data,...data.data]
+            })
+        }
+    }
+
+    componentWillUnmount() {
+        this.mounted = false;
+    }
 
     ogItem(){
         // console.log(this.props)

@@ -30,12 +30,19 @@ class Film extends Component{
     }
 
     async componentWillMount(){
+        this.mounted = true;
         let dataList = await this.getData(0,7);
-        // console.log(dataList);
-        this.setState({
-            dataList:[...this.state.dataList,...dataList.data]
-        })
-    };
+        // console.log(this);
+        if(this.mounted){
+            this.setState({
+                dataList:[...this.state.dataList,...dataList.data]
+            })
+        }
+    }
+
+    componentWillUnmount() {
+        this.mounted = false;
+    }
 
     async nextPage(qty,limit){
         // console.log(qty,limit)

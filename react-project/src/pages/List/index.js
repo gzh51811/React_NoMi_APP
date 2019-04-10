@@ -28,7 +28,7 @@ class List extends Component{
     }
 
     render(){
-        console.log(this);
+        // console.log(this);
         let {active} = this.state
         return <div className="List">
                 <Nav
