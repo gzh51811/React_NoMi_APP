@@ -10,12 +10,12 @@ class show extends  Component {
 
         }
     }
-    // componentDidMount(){
-    //     var mySwiper = new Swiper('.swiper-container', {
-    //         freeMode: true,
-    //         slidesPerView: 3,
-    //     })
-    // }
+    componentDidMount(){
+        var mySwiper = new Swiper('.swiper-container', {
+            freeMode: true,
+            slidesPerView: 3,
+        })
+    }
     render() {
         return <div className="mod m-show m-hot-show">
             <h2>
