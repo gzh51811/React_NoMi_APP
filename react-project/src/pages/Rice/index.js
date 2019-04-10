@@ -42,31 +42,31 @@ class Rice extends Component{
             curr: 'Plaza',
             RiceList:[
                 {
-                    imgurl:'./Rice1.jpg',
+                    imgurl:'Rice1.jpg',
                     name:'吴京',
                     poll:'2.8万张',
                     movieName:'流浪地球'
                 },
                 {
-                    imgurl:'./Rice2.jpg',
+                    imgurl:'Rice2.jpg',
                     name:'周星驰',
                     poll:'4387张',
                     movieName:'新喜剧之王'
                 },
                 {
-                    imgurl:'./Rice3.jpg',
+                    imgurl:'Rice3.jpg',
                     name:'布丽·拉尔森',
                     poll:'2039张',
                     movieName:'惊奇队长'
                 },
                 {
-                    imgurl:'./Rice4.jpg',
+                    imgurl:'Rice4.jpg',
                     name:'詹妮弗·康纳利',
                     poll:'1870张',
                     movieName:'阿丽塔：战斗天使'
                 },
                 {
-                    imgurl:'./Rice5.jpg',
+                    imgurl:'Rice5.jpg',
                     name:'陈意涵',
                     poll:'1358张',
                     movieName:'比悲伤更悲伤的故事'
@@ -111,7 +111,7 @@ class Rice extends Component{
                             {
                                 this.state.RiceList.map(item => (<div className="list_long_item" key={item.name}>
                                 <div className="long_item_img">
-                                    <img src={item.imgurl} alt="" />
+                                    <img src={require('../../assets/'+item.imgurl)} alt="" />
                                 </div>
                                 <p className="long_item_name">{item.name}</p>
                                 <p className="long_item_poll">{item.poll}</p>

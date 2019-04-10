@@ -9,19 +9,19 @@ class Fq extends Component{
                                         name:'糯米电影',
                                         poll:'468.1万',
                                         tie:'0',
-                                        imgurl:'./fq1.jpg'
+                                        imgurl:'fq1.jpg'
                                 },
                                 {
                                         name:'糯米新闻',
                                         poll:'473.4万',
                                         tie:'2',
-                                        imgurl:'./fq2.jpg'
+                                        imgurl:'fq2.jpg'
                                 },
                                 {
                                         name:'战狼2',
                                         poll:'12.0万',
                                         tie:'11',
-                                        imgurl:'./fq3.jpg'
+                                        imgurl:'fq3.jpg'
                                 }
                                 
                         ],
@@ -91,7 +91,7 @@ class Fq extends Component{
                                                 this.state.dianlist.map((item,index) => <li className="Fq_main_item" key={item.name}>
                                                 <div className="Fq_main_cont">
                                                         <div className="main_cont_img">
-                                                        <img src={item.imgurl} alt=""/>
+                                                        <img src={require('../../assets/'+item.imgurl)} alt=""/>
                                                         </div>
                                                         <h3 className="title">{item.name}</h3>
                                                         <p className="fan-info">{item.poll}糯米饭</p>
