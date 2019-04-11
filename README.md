@@ -5,7 +5,7 @@
 （组长：陈聪，组员：陈渝元、杨其雄、邓梓劲）
 
 ## 技术栈
-React + React-cli + React-router + React-rudex + Mongodb + Nodejs/express
+React + React-cli + React-router + React-rudex + Mongodb + Nodejs/express + token 
 
 ## 任务分配
 * 陈聪：APP脚手架搭建，我的、饭圈模块组件、订单页
